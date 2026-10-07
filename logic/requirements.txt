@@ -5,3 +5,4 @@ ollama
 matplotlib
 seaborn
 fastapi
+python-multipart
