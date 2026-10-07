@@ -1,0 +1,1249 @@
+/* ========================================
+   GLOBAL
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+
+    background:
+        radial-gradient(
+            circle at 50% -20%,
+            #242424 0%,
+            #0b0b0b 45%,
+            #050505 100%
+        );
+
+    color: #ffffff;
+
+    font-family: "Inter", sans-serif;
+}
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+.site-header {
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+
+    width: 100%;
+}
+
+
+/* Navigation */
+
+.navbar {
+    width: 100%;
+}
+
+.nav-container {
+    max-width: 1280px;
+    margin: 0 auto;
+
+    padding: 18px 40px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 80px;
+}
+
+
+/* Logo */
+
+.logo {
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 17px;
+    font-weight: 600;
+
+    letter-spacing: 2.5px;
+
+    white-space: nowrap;
+}
+
+
+/* Navigation Links */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
+    margin-left: auto;
+}
+
+.nav-cta {
+    margin-left: 50px;
+}
+
+.nav-links a {
+    position: relative;
+
+    color: #a5a5a5;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 400;
+
+    transition:
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+}
+
+
+/* Underline effect */
+
+.nav-links a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -7px;
+
+    width: 0;
+    height: 1px;
+
+    background: #c8a96b;
+
+    transition: width 0.25s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+
+/* Get Involved button */
+
+.nav-cta {
+    display: inline-block;
+
+    padding: 10px 18px;
+
+    border: 1px solid rgba(255, 255, 255, 0.22);
+
+    border-radius: 6px;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 12px;
+    font-weight: 500;
+
+    transition:
+        background 0.25s ease,
+        border-color 0.25s ease,
+        color 0.25s ease;
+}
+
+.nav-cta:hover {
+    background: rgba(255, 255, 255, 0.12);
+
+    border-color: rgba(255, 255, 255, 0.45);
+
+    color: #ffffff;
+}
+
+
+/* ========================================
+   MAIN CONTENT
+======================================== */
+
+main {
+    max-width: 1280px;
+
+    margin: 0 auto;
+
+    padding: 100px 40px;
+}
+
+main h1 {
+    font-size: clamp(40px, 6vw, 80px);
+
+    font-weight: 500;
+
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+}
+
+main p {
+    max-width: 650px;
+
+    margin-top: 25px;
+
+    color: #888888;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+
+/* ========================================
+   FOOTER
+======================================== */
+
+.site-footer {
+    width: 100%;
+
+    margin-top: 100px;
+
+    background: rgba(0, 0, 0, 0.78);
+
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+    padding: 70px 40px 25px;
+}
+
+
+/* Footer main container */
+
+.footer-container {
+    max-width: 1280px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+
+    gap: 60px;
+
+    padding-bottom: 60px;
+}
+
+
+/* Footer brand */
+
+.footer-brand h2 {
+    color: #ffffff;
+
+    font-size: 17px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+}
+
+.footer-brand p {
+    max-width: 340px;
+
+    margin-top: 18px;
+
+    color: #777777;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+}
+
+
+/* Footer columns */
+
+.footer-column {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+.footer-column h3 {
+    margin-bottom: 10px;
+
+    color: #ffffff;
+
+    font-size: 11px;
+    font-weight: 500;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+}
+
+.footer-column a {
+    width: fit-content;
+
+    color: #777777;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.footer-column a:hover {
+    color: #c8a96b;
+
+    transform: translateX(3px);
+}
+
+
+/* ========================================
+   FOOTER BOTTOM
+======================================== */
+
+.footer-bottom {
+    max-width: 1280px;
+
+    margin: 0 auto;
+
+    padding-top: 25px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    color: #555555;
+
+    font-size: 11px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+
+/* Legal links */
+
+.footer-legal {
+    display: flex;
+
+    gap: 25px;
+}
+
+.footer-legal a {
+    color: #555555;
+
+    text-decoration: none;
+
+    transition: color 0.2s ease;
+}
+
+.footer-legal a:hover {
+    color: #aaaaaa;
+}
+
+
+/* ========================================
+   RESPONSIVE — TABLET
+======================================== */
+
+@media (max-width: 900px) {
+
+    .nav-container {
+        padding: 18px 25px;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 45px;
+    }
+}
+
+
+/* ========================================
+   RESPONSIVE — MOBILE
+======================================== */
+
+@media (max-width: 650px) {
+
+    .nav-container {
+        padding: 17px 20px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-cta {
+        display: none;
+    }
+
+
+    /* Main */
+
+    main {
+        padding: 70px 25px;
+    }
+
+
+    /* Footer */
+
+    .site-footer {
+        margin-top: 60px;
+
+        padding: 55px 25px 25px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+
+        padding-bottom: 45px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 18px;
+    }
+}
+/* ========================================
+   HOME PAGE
+======================================== */
+
+/* ---------- HERO ---------- */
+
+.hero {
+    min-height: 78vh;
+
+    max-width: 1280px;
+    margin: 0 auto;
+
+    padding: 120px 40px;
+
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.hero-label {
+    margin-bottom: 24px;
+
+    color: #c8a96b;
+
+    font-size: 11px;
+    font-weight: 500;
+
+    letter-spacing: 2.5px;
+}
+
+.hero h1 {
+    margin: 0;
+
+    color: #f5f5f5;
+
+    font-size: clamp(52px, 7vw, 92px);
+    font-weight: 500;
+
+    line-height: 1;
+    letter-spacing: -4px;
+}
+
+.hero h1 span {
+    color: #777;
+}
+
+.hero-description {
+    max-width: 650px;
+
+    margin-top: 32px;
+
+    color: #888;
+
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* ---------- HERO BUTTONS ---------- */
+
+.hero-buttons {
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 38px;
+}
+
+.primary-button,
+.secondary-button {
+    display: inline-block;
+
+    padding: 13px 22px;
+
+    font-size: 12px;
+
+    text-decoration: none;
+
+    transition: 0.25s ease;
+}
+
+.primary-button {
+    background: #f5f5f5;
+
+    color: #050505;
+}
+
+.primary-button:hover {
+    background: #c8a96b;
+
+    color: #fff;
+}
+
+.secondary-button {
+    border: 1px solid #333;
+
+    color: #fff;
+}
+
+.secondary-button:hover {
+    background: rgba(255, 255, 255, 0.06);
+
+    border-color: #666;
+}
+
+
+/* ========================================
+   FEATURES
+======================================== */
+
+.features {
+    max-width: 1280px;
+
+    margin: 0 auto;
+
+    padding: 120px 40px;
+}
+
+.section-heading {
+    max-width: 700px;
+
+    margin-bottom: 70px;
+}
+
+.section-label {
+    margin-bottom: 20px;
+
+    color: #c8a96b;
+
+    font-size: 11px;
+    font-weight: 500;
+
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+    margin: 0;
+
+    color: #f5f5f5;
+
+    font-size: clamp(36px, 5vw, 60px);
+    font-weight: 500;
+
+    line-height: 1.1;
+    letter-spacing: -2px;
+}
+
+.section-heading > p:last-child {
+    max-width: 550px;
+
+    margin-top: 25px;
+
+    color: #777;
+
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* ---------- FEATURE GRID ---------- */
+
+.feature-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 1px;
+
+    background: #292929;
+
+    border: 1px solid #292929;
+}
+
+.feature-card {
+    min-height: 280px;
+
+    padding: 40px;
+
+    background: #080808;
+
+    transition: background 0.25s ease;
+}
+
+.feature-card:hover {
+    background: #101010;
+}
+
+.feature-number {
+    color: #555;
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+}
+
+.feature-card h3 {
+    margin-top: 55px;
+
+    color: #f5f5f5;
+
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.feature-card p {
+    max-width: 430px;
+
+    margin-top: 15px;
+
+    color: #777;
+
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+
+/* ========================================
+   HOW IT WORKS
+======================================== */
+
+.how-it-works {
+    max-width: 1280px;
+
+    margin: 0 auto;
+
+    padding: 120px 40px;
+}
+
+.steps {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 50px;
+}
+
+.step {
+    padding-top: 25px;
+
+    border-top: 1px solid #333;
+}
+
+.step > span {
+    color: #c8a96b;
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+}
+
+.step h3 {
+    margin-top: 45px;
+
+    color: #f5f5f5;
+
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.step p {
+    max-width: 350px;
+
+    margin-top: 15px;
+
+    color: #777;
+
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+
+/* ========================================
+   FINAL CTA
+======================================== */
+
+.cta-section {
+    max-width: 900px;
+
+    margin: 80px auto 140px;
+
+    padding: 100px 40px;
+
+    text-align: center;
+
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
+}
+
+.cta-section h2 {
+    margin: 0;
+
+    color: #f5f5f5;
+
+    font-size: clamp(40px, 6vw, 70px);
+    font-weight: 500;
+
+    line-height: 1.05;
+    letter-spacing: -3px;
+}
+
+.cta-section > p:not(.section-label) {
+    max-width: 500px;
+
+    margin: 25px auto 30px;
+
+    color: #777;
+
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* ========================================
+   HOME PAGE RESPONSIVE
+======================================== */
+
+@media (max-width: 800px) {
+
+    .hero {
+        min-height: 70vh;
+
+        padding: 80px 25px;
+    }
+
+    .features,
+    .how-it-works {
+        padding: 80px 25px;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .steps {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+    }
+
+    .hero h1 {
+        letter-spacing: -2px;
+    }
+
+    .cta-section {
+        margin: 50px 25px 90px;
+
+        padding: 70px 25px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .hero-buttons {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .feature-card {
+        padding: 30px;
+    }
+
+    .cta-section h2 {
+        letter-spacing: -2px;
+    }
+}
+/* ========================================
+   HERO BUTTONS
+======================================== */
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 35px;
+}
+
+.primary-btn {
+    display: inline-block;
+
+    padding: 13px 24px;
+
+    background: #f5f5f5;
+    color: #050505;
+
+    border: 1px solid #f5f5f5;
+    border-radius: 6px;
+
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+
+    transition: all 0.25s ease;
+}
+
+.primary-btn:hover {
+    background: #c8a96b;
+    border-color: #c8a96b;
+    color: #ffffff;
+}
+
+
+/* ========================================
+   LOGIN + SIGN UP
+======================================== */
+
+.auth-buttons {
+    display: flex;
+    gap: 14px;
+
+    margin-top: 10px;
+}
+
+.auth-btn {
+    position: relative;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 145px;
+    padding: 13px 28px;
+    margin-top: 25px;
+
+    background: rgba(255, 255, 255, 0.02);
+    color: #ffffff;
+
+    border: 1px solid rgba(200, 169, 107, 0.5);
+    border-radius: 7px;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+
+    transition:
+        background 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease,
+        transform 0.25s ease;
+}
+
+.auth-btn:hover {
+    background: rgba(200, 169, 107, 0.08);
+
+    border-color: #c8a96b;
+
+    color: #ffffff;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 0 8px rgba(200, 169, 107, 0.35),
+        0 0 20px rgba(200, 169, 107, 0.12);
+}
+
+
+/* Neon line */
+
+.auth-btn::after {
+    content: "";
+
+    position: absolute;
+
+    left: 20%;
+    right: 20%;
+    bottom: -2px;
+
+    height: 1px;
+
+    background: #c8a96b;
+
+    box-shadow:
+        0 0 6px #c8a96b,
+        0 0 12px rgba(200, 169, 107, 0.6);
+
+    opacity: 0;
+
+    transition: opacity 0.25s ease;
+}
+
+.auth-btn:hover::after {
+    opacity: 1;
+}
+
+
+/* ========================================
+   MOBILE HERO BUTTONS
+======================================== */
+
+@media (max-width: 500px) {
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .auth-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .auth-btn {
+        width: 170px;
+    }
+}
+
+/* =========================
+   PROFILE BUTTON
+   ========================= */
+
+.profile-btn {
+    width: 40px;
+    height: 40px;
+
+    margin-left: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(200, 169, 107, 0.5);
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.02);
+    color: #c8a96b;
+
+    text-decoration: none;
+
+    transition: all 0.25s ease;
+}
+
+.profile-icon {
+    font-size: 16px;
+    line-height: 1;
+}
+
+.profile-btn:hover {
+    color: #fff;
+    border-color: #c8a96b;
+
+    background: rgba(200, 169, 107, 0.08);
+
+    box-shadow:
+        0 0 8px rgba(200, 169, 107, 0.4),
+        0 0 18px rgba(200, 169, 107, 0.15);
+
+    transform: translateY(-1px);
+}
+/* =========================================
+   ANALYSIS PAGE
+========================================= */
+
+main h1 {
+    color: #000000 !important;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    border-left: 4px solid #c9a227;
+    padding-left: 10px;
+}
+
+main > p {
+    color: #555;
+    font-size: 15px;
+}
+
+
+/* =========================================
+   FILE INPUT
+========================================= */
+
+#csvFile {
+    font-size: 14px;
+    color: #960303;
+    padding: 5px;
+    border: 1px dashed #c9a227;
+    border-radius: 7px;
+    background: #423838;
+    margin-top: 15px;
+}
+
+#csvFile::file-selector-button {
+    background: #111;
+    color: #180101;
+    border: none;
+    border-radius: 6px;
+    padding: 9px 14px;
+    margin-right: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/* =========================================
+   UPLOAD BUTTON
+========================================= */
+
+#uploadBtn {
+    background: #000;
+    color: #fff;
+    border: 1px solid #000;
+    border-radius: 7px;
+    padding: 11px 22px;
+    min-width: 125px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 8px;
+    transition: all 0.25s ease;
+}
+
+#uploadBtn:hover {
+    background: #c9a227;
+    color: #fff;
+    border-color: #c9a227;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.18);
+}
+
+#uploadBtn:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================
+   STATUS
+========================================= */
+
+#status {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #312b2b;
+}
+
+
+/* =========================================
+   ANALYSIS RESULT
+========================================= */
+
+#analysisResult {
+    margin-top: 30px;
+    width: 100%;
+    overflow-x: auto;
+}
+
+
+/* =========================================
+   FILE NAME
+========================================= */
+
+#analysisResult h2 {
+    color: #111;
+    font-size: 21px;
+    font-weight: 700;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    border-left: 4px solid #c9a227;
+    padding-left: 10px;
+}
+
+
+/* =========================================
+   SECTION HEADINGS
+========================================= */
+
+#analysisResult h3 {
+    color: #111;
+    font-size: 17px;
+    font-weight: 650;
+    margin-top: 28px;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #c9a227;
+}
+
+
+/* =========================================
+   TEXT
+========================================= */
+
+#analysisResult p {
+    color: #dfd8d8;
+    font-size: 14px;
+    margin: 7px 0;
+}
+
+#analysisResult strong {
+    color: #f3efef;
+}
+
+
+/* =========================================
+   COLUMN LIST
+========================================= */
+
+#analysisResult ul {
+    padding-left: 25px;
+    margin-top: 8px;
+}
+
+#analysisResult li {
+    color: #ffffff;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+
+/* =========================================
+   TABLE CONTAINER
+========================================= */
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+
+/* =========================================
+   TABLE
+========================================= */
+
+#analysisResult table {
+    border-collapse: collapse;
+    width: auto;
+    min-width: 400px;
+    margin-top: 10px;
+    background: #fff;
+    border: 1px solid #000;
+    font-size: 13px;
+}
+
+
+/* =========================================
+   TABLE CELLS
+========================================= */
+
+#analysisResult th,
+#analysisResult td {
+    padding: 8px 13px;
+    border: 1px solid #000;
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   TABLE HEADER
+========================================= */
+
+#analysisResult th {
+    background: #000;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+/* =========================================
+   TABLE DATA
+========================================= */
+
+#analysisResult td {
+    color: #111;
+    text-align: right;
+}
+
+
+/* First column */
+
+#analysisResult td:first-child {
+    text-align: left;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   TABLE HOVER
+========================================= */
+
+#analysisResult tbody tr:hover td {
+    background: #f5edcf;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 700px) {
+
+    #csvFile {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #uploadBtn {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+
+    #analysisResult table {
+        font-size: 12px;
+    }
+
+    #analysisResult th,
+    #analysisResult td {
+        padding: 6px 9px;
+    }
+
+}

@@ -1,0 +1,507 @@
+/* ========================================
+   ABOUT PAGE
+======================================== */
+
+
+/* ========================================
+   HERO
+======================================== */
+
+.about-page {
+    width: 100%;
+    padding: 0;
+}
+
+.about-hero {
+    max-width: 1280px;
+    min-height: 75vh;
+
+    margin: 0 auto;
+    padding: 130px 40px;
+
+    display: flex;
+    align-items: center;
+}
+
+.about-hero-content {
+    max-width: 900px;
+}
+
+.about-label {
+    margin-bottom: 22px;
+
+    color: #c8a96b;
+
+    font-size: 11px;
+    font-weight: 500;
+
+    letter-spacing: 2.5px;
+}
+
+.about-hero h1 {
+    margin: 0;
+
+    color: #f5f5f5;
+
+    font-size: clamp(55px, 8vw, 100px);
+    font-weight: 500;
+
+    line-height: 0.98;
+    letter-spacing: -5px;
+}
+
+.about-hero h1 span {
+    color: #666;
+}
+
+.about-hero-description {
+    max-width: 650px;
+
+    margin-top: 35px;
+
+    color: #888;
+
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+
+/* ========================================
+   MISSION
+======================================== */
+
+.about-mission {
+    max-width: 1280px;
+
+    margin: 0 auto;
+
+    padding: 130px 40px;
+
+    border-top: 1px solid #202020;
+}
+
+.about-section-label {
+    color: #c8a96b;
+
+    font-size: 11px;
+    font-weight: 500;
+
+    letter-spacing: 2px;
+}
+
+.mission-content {
+    margin-top: 65px;
+
+    display: grid;
+
+    grid-template-columns: 1.2fr 1fr;
+
+    gap: 100px;
+}
+
+.mission-content h2 {
+    margin: 0;
+
+    color: #f5f5f5;
+
+    font-size: clamp(40px, 5vw, 65px);
+    font-weight: 500;
+
+    line-height: 1.05;
+    letter-spacing: -3px;
+}
+
+.mission-content h2 span {
+    color: #666;
+}
+
+.mission-text {
+    max-width: 520px;
+}
+
+.mission-text p {
+    margin-bottom: 25px;
+
+    color: #777;
+
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+
+/* ========================================
+   BELIEFS
+======================================== */
+
+.beliefs {
+    max-width: 1280px;
+
+    margin: 0 auto;
+
+    padding: 130px 40px;
+}
+
+.about-section-heading {
+    max-width: 750px;
+
+    margin-bottom: 70px;
+}
+
+.about-section-heading h2 {
+    margin: 0;
+
+    color: #f5f5f5;
+
+    font-size: clamp(40px, 5vw, 65px);
+    font-weight: 500;
+
+    line-height: 1.05;
+    letter-spacing: -3px;
+}
+
+
+/* ---------- BELIEF GRID ---------- */
+
+.belief-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 1px;
+
+    background: #292929;
+
+    border: 1px solid #292929;
+}
+
+.belief-card {
+    min-height: 270px;
+
+    padding: 40px;
+
+    background: #080808;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+.belief-card:hover {
+    background: #101010;
+}
+
+.belief-card > span {
+    color: #555;
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+}
+
+.belief-card h3 {
+    margin-top: 55px;
+
+    color: #f5f5f5;
+
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.belief-card p {
+    max-width: 430px;
+
+    margin-top: 15px;
+
+    color: #777;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+}
+
+
+/* ========================================
+   PLATFORM
+======================================== */
+
+.platform-section {
+    max-width: 1280px;
+
+    margin: 0 auto;
+
+    padding: 130px 40px;
+
+    display: grid;
+
+    grid-template-columns: 120px 1fr;
+
+    gap: 70px;
+
+    border-top: 1px solid #202020;
+}
+
+.platform-number {
+    color: #333;
+
+    font-size: 80px;
+    font-weight: 500;
+
+    line-height: 1;
+
+    letter-spacing: -5px;
+}
+
+.platform-content {
+    max-width: 750px;
+}
+
+.platform-content h2 {
+    margin: 0;
+
+    color: #f5f5f5;
+
+    font-size: clamp(40px, 5vw, 65px);
+    font-weight: 500;
+
+    line-height: 1.05;
+    letter-spacing: -3px;
+}
+
+.platform-content > p:not(.about-label) {
+    max-width: 600px;
+
+    margin-top: 30px;
+
+    color: #777;
+
+    font-size: 14px;
+
+    line-height: 1.9;
+}
+
+
+/* ========================================
+   BUTTON
+======================================== */
+
+.about-button {
+    display: inline-block;
+
+    margin-top: 35px;
+
+    padding: 13px 23px;
+
+    background: #f5f5f5;
+
+    color: #050505;
+
+    font-size: 12px;
+    font-weight: 500;
+
+    text-decoration: none;
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease;
+}
+
+.about-button:hover {
+    background: #c8a96b;
+
+    color: #ffffff;
+}
+
+
+/* ========================================
+   TECHNOLOGY
+======================================== */
+
+.technology {
+    max-width: 1280px;
+
+    margin: 0 auto;
+
+    padding: 130px 40px;
+
+    border-top: 1px solid #202020;
+}
+
+.technology-list {
+    border-top: 1px solid #292929;
+}
+
+.technology-item {
+    display: grid;
+
+    grid-template-columns: 100px 1fr;
+
+    gap: 40px;
+
+    padding: 35px 0;
+
+    border-bottom: 1px solid #292929;
+}
+
+.technology-item > span {
+    color: #555;
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+}
+
+.technology-item h3 {
+    margin: 0;
+
+    color: #f5f5f5;
+
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.technology-item p {
+    max-width: 600px;
+
+    margin-top: 10px;
+
+    color: #777;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+}
+
+
+/* ========================================
+   FINAL CTA
+======================================== */
+
+.about-cta {
+    max-width: 950px;
+
+    margin: 80px auto 140px;
+
+    padding: 110px 40px;
+
+    text-align: center;
+
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
+}
+
+.about-cta h2 {
+    margin: 0;
+
+    color: #f5f5f5;
+
+    font-size: clamp(42px, 6vw, 72px);
+    font-weight: 500;
+
+    line-height: 1.05;
+    letter-spacing: -4px;
+}
+
+.about-cta > p:not(.about-label) {
+    max-width: 500px;
+
+    margin: 25px auto 0;
+
+    color: #777;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+.about-cta .about-button {
+    margin-top: 30px;
+}
+
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 900px) {
+
+    .about-hero {
+        min-height: 65vh;
+
+        padding: 100px 25px;
+    }
+
+    .about-mission,
+    .beliefs,
+    .platform-section,
+    .technology {
+        padding: 90px 25px;
+    }
+
+    .mission-content {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+    }
+
+    .platform-section {
+        grid-template-columns: 70px 1fr;
+
+        gap: 40px;
+    }
+
+    .platform-number {
+        font-size: 55px;
+    }
+
+    .about-cta {
+        margin: 60px 25px 90px;
+
+        padding: 80px 25px;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .about-hero {
+        padding: 80px 25px;
+    }
+
+    .about-hero h1 {
+        letter-spacing: -3px;
+    }
+
+    .about-hero-description {
+        font-size: 14px;
+    }
+
+    .belief-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .belief-card {
+        min-height: 240px;
+
+        padding: 30px;
+    }
+
+    .platform-section {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+    }
+
+    .platform-number {
+        font-size: 45px;
+    }
+
+    .technology-item {
+        grid-template-columns: 45px 1fr;
+
+        gap: 20px;
+    }
+
+    .about-cta h2 {
+        letter-spacing: -2px;
+    }
+}

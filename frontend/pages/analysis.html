@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+       <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About | AI Data Scientist</title>
+
+    <!-- Inter Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- GlassKit -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@jungherz-de/glasskit@latest/glasskit.min.css"
+    >
+
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="../decoration/styles.css">
+
+    <!-- About Page CSS -->
+    <link rel="stylesheet" href="../decoration/analysis.css">
+</head>
+
+<body>
+    <div id="header"></div>
+    <main>
+
+        <h1>Data Analysis</h1>
+
+        <p>Upload a CSV file to begin analysis.</p>
+
+        <input type="file" id="csvFile" accept=".csv">
+
+        <button id="uploadBtn">
+            Upload CSV
+        </button>
+
+        <p id="status"></p>
+
+        <!-- Analysis will appear here -->
+        <div id="analysisResult"></div>
+
+        <div id="visualizationSection" style="display: none;">
+
+    <h2>Visualizations</h2>
+
+    <div class="chart-grid">
+
+        <div class="chart-card" id="distributionChart"></div>
+
+        <div class="chart-card" id="missingChart"></div>
+
+        <div class="chart-card chart-wide" id="correlationChart"></div>
+
+        <div class="chart-card chart-wide" id="timeSeriesChart"></div>
+
+    </div>
+
+</div>
+
+    </main>
+    <div id="footer"></div>
+  <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+
+<script src="../script/script.js"></script>
+<script src="../script/analysis.js"></script>
+<script src="../script/visualisation.js"></script>
+</body>
+
+</html>
